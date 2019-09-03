@@ -5,16 +5,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="Vikkey" content="Vivek Gupta & IoTMonk">
 	  <meta http-equiv="Access-Control-Allow-Origin" content="*">
-     
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
-      <title>Design Project</title></head>  
+
+       <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+        <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script>
+
+      <title>Design Project</title></head>
 
       <body bgcolor="#607D8B">
    <center>
 		<h1 style="font-family: Helvetica;color: white;">MECN4005 DESIGN PROJECT CLIMATE CONTROL SYSTEM</h1>
 	</center>
-   
+
    <div class="center">
 	<div align="center" class="form">
        <form action="" method="get">
@@ -30,13 +33,13 @@
 			  <button type="button" id="D3-on" class="button button1" >PUMP ON</button>
 			  <button type="button" id="D3-off" class="button button3" >PUMP OFF</button>
 			  <br>
-			  
+
         </form>
 		<br><br>
 	 </div>
 	</div>
-	
-	
+
+
 
     </body>
     <script>
@@ -47,7 +50,7 @@
 					console.log(data);
 				});
 		});
-		
+
 		document.getElementById('D1-off').addEventListener('click', function() {
 				var ip = "POJRLWLB8G431XD4";//document.getElementById('ip').value;
 				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field1=0"
@@ -55,8 +58,8 @@
 					console.log(data);
 				});
 		});
-		
-		
+
+
 		document.getElementById('D2-on').addEventListener('click', function() {
 				var ip ="POJRLWLB8G431XD4"; //document.getElementById('ip').value;
 				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field2=1"
@@ -64,7 +67,7 @@
 					console.log(data);
 				});
 		});
-		
+
 		document.getElementById('D2-off').addEventListener('click', function() {
 				var ip = "POJRLWLB8G431XD4";//document.getElementById('ip').value;
 				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field2=0"
@@ -72,8 +75,8 @@
 					console.log(data);
 				});
 		});
-		
-		
+
+
 		document.getElementById('D3-on').addEventListener('click', function() {
 				var ip = "POJRLWLB8G431XD4";//document.getElementById('ip').value;
 				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field3=1"
@@ -81,7 +84,7 @@
 					console.log(data);
 				});
 		});
-		
+
 		document.getElementById('D3-off').addEventListener('click', function() {
 				var ip = "POJRLWLB8G431XD4";//document.getElementById('ip').value;
 				var url = "http://api.thingspeak.com/update?api_key="+ ip + "&field3=0"
@@ -90,6 +93,6 @@
 				});
 		});
 
-		
+
 	</script>
 </html>
